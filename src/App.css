@@ -28,7 +28,7 @@ input {
   
 }
 button {
-  background-color: rgb(14, 168, 198);
+  background-color: rgb(126, 68, 235);
   border: none;
   border-radius: 6px;
   font-size: 14px;
@@ -39,7 +39,7 @@ button {
 }
 button:hover {
   transform: rotate(3deg);
-  background-color: black;
+  background-color: rgb(146, 108, 210);
   color: aliceblue;
 }
 .main {
