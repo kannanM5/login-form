@@ -3,7 +3,7 @@ import { HANDLE_SUBMIT } from "./actionTypes";
 const initialState = {
   details: [
     { name: "john", email: "john@gmail.com", password: "123", auth: true },
-    { name: "mike", email: "mike@gmail.com", password: "123", auth: false },
+    { name: "mike", email: "mike@gmail.com", password: "123", auth: true },
     { name: "peter", email: "peter@gmail.com", password: "123", auth: false },
     { name: "ken", email: "ken@gmail.com", password: "123", auth: false },
   ],

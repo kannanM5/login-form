@@ -14,34 +14,18 @@ const MainContent = () => {
     const { email, password } = item;
     let newArr = selectObject.details;
     
-    // newArr.map((data) => {
-    //   if ( email == data.email && password == data.password && data.auth == true ) {
-    //     setArr((arr) => [...arr, { email: email, password: password }]);
-    //     dispatch(handle_submit(item));
-    //     navigate("./move");
-    //     setItem({ email: "", password: "" });
-    //   }
-
-    for(let i = 0; i < newArr.length; i++){
-      if ( email == newArr[i].email && password ==newArr[i].password && newArr[i].auth == true ) {
+    newArr.map((data) => {
+      if ( email == data.email && password == data.password && data.auth == true ) {
         setArr((arr) => [...arr, { email: email, password: password }]);
         dispatch(handle_submit(item));
         navigate("./move");
-        setItem({ email: "", password: "" })
-        i=newArr.length
+        setItem({ email: "", password: "" });
       }
-      else{        
-        alert("error")
-        i=newArr.length
-      }
-    }
-  
+    })
+  }
    
-    }
-    // )
-  
-
     
+   
   return (
     <div>
       <div className="main">
