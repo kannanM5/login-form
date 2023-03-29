@@ -16,7 +16,7 @@ const Table = () => {
         </thead>
         <tbody>
           <tr>
-            <td>{arr[0] .name}</td>
+            <td>{arr[0].name}</td>
             <td>{arr[0].email}</td>
             <td>{arr[0].password}</td>
           </tr>

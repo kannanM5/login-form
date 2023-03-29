@@ -15,7 +15,7 @@ const MainContent = () => {
     let newArr = selectObject.details;
     
     newArr.map((data) => {
-      if ( email == data.email && password == data.password && data.auth == true ) {
+      if ( email === data.email && password === data.password && data.auth === true ) {
         setArr((arr) => [...arr, { email: email, password: password }]);
         dispatch(handle_submit(item));
         navigate("./move");
